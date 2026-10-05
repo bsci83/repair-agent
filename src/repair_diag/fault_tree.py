@@ -51,7 +51,7 @@ NODES: dict[str, Node] = {
             "What symptom brings the truck in today? Pick the closest match."
         ),
         expected_keys=("no_start", "rough_idle", "overheating", "black_smoke",
-                       "white_smoke", "low_power", "shutting_down"),
+                       "white_smoke", "low_power", "shutting_down", "egr_codes"),
         child={
             "no_start": "fam_no_start",
             "rough_idle": "fam_injector",
@@ -60,6 +60,7 @@ NODES: dict[str, Node] = {
             "white_smoke": "fam_cooling",
             "low_power": "fam_injector",
             "shutting_down": "fam_electrical",
+            "egr_codes": "fam_egr",
         },
         procedure="series60-symptoms.md",
     ),
