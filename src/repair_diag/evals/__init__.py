@@ -1,0 +1,1 @@
+"""Eval package — deterministic checks and a runner."""
