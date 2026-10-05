@@ -1,0 +1,5 @@
+{
+  "root": "shutting_down",
+  "fam_electrical": "sudden",
+  "elec_sudden": "gauges_live"
+}
